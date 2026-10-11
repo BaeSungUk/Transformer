@@ -1,0 +1,45 @@
+{
+  "model": "google-bert/bert-base-uncased",
+  "dataset": "cardiffnlp/tweet_eval",
+  "config": "irony",
+  "seed": 42,
+  "epochs": 3,
+  "max_length": 128,
+  "batch_size": 8,
+  "learning_rate": 2e-05,
+  "split_sizes": {
+    "train": 2862,
+    "test": 784,
+    "validation": 955
+  },
+  "dataset_fingerprints": {
+    "train": "0d685d856a837f37",
+    "test": "07f7e78b180ee659",
+    "validation": "dee6dd83441b56e3"
+  },
+  "model_commit": "86b5e0934494bd15c9632b12f734a8a67f723594",
+  "best_checkpoint": "outputs\\checkpoints\\checkpoint-1074",
+  "best_validation_macro_f1": 0.6780242504510856,
+  "training_seconds": 83.26537149999058,
+  "test_results": {
+    "TF-IDF + LogisticRegression": {
+      "accuracy": 0.6505102040816326,
+      "macro_f1": 0.6424095936291059,
+      "irony_f1": 0.5885885885885885,
+      "irony_precision": 0.5521126760563381,
+      "irony_recall": 0.6302250803858521
+    },
+    "BERT fine-tuned": {
+      "accuracy": 0.6823979591836735,
+      "macro_f1": 0.6800613602505543,
+      "irony_f1": 0.6527196652719666,
+      "irony_precision": 0.5763546798029556,
+      "irony_recall": 0.752411575562701
+    }
+  },
+  "python": "3.12.7",
+  "torch": "2.11.0+cu128",
+  "transformers": "4.57.1",
+  "datasets": "4.4.1",
+  "device": "NVIDIA GeForce RTX 5050 Laptop GPU"
+}

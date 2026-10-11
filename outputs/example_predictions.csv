@@ -1,0 +1,5 @@
+text,prediction,non_irony_probability,irony_probability,truncated
+Thank you for helping me finish the project.,irony,0.03206424042582512,0.9679358005523682,False
+"Great, another meeting that could have been an email.",irony,0.040939316153526306,0.9590606093406677,False
+I love waiting two hours for a five minute appointment.,irony,0.012909676879644394,0.9870902895927429,False
+The train arrived on time today.,irony,0.04576340317726135,0.9542365670204163,False
